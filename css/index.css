@@ -1,0 +1,342 @@
+body{
+    max-width: 540px;
+    color: #000;
+    margin: 0 auto;
+    background: #f4f4f4;
+}
+li{
+    list-style: none;
+}
+a{
+    display: inline-block;
+    text-decoration: none;
+}
+*{ margin:0; padding:0; }
+/* 搜索栏 */
+.search-box{
+    display: flex;
+    max-width: 540px;
+    background: #fff;
+    width: 100%;
+    height: 50px;
+    padding: 12px 12px 6px;
+    box-sizing: border-box;
+
+}
+.search-input{
+    position: relative;
+    flex: 1;
+    height: 32px;
+    border-radius: 18px;
+    border: 2px solid #2E9CF8;
+    color: #ACACAC;
+}
+.search-input i::before{
+    content: "";
+    /* display: block; */
+    position: absolute;
+    top: 8px;
+    left: 9px;
+    height: 20px;
+    width: 20px;
+    background: url(../images/放大镜.png) no-repeat;
+
+}
+.search-input span{
+    line-height: 32px;
+    font-size: 15px;
+    margin-left: 27px;
+}
+
+/* 导航列表 */
+.main-nav{
+    height: 184px;
+   border-radius: 12px;
+    display: flex;
+    flex-direction: row;
+    /* background: #ACACAC; */
+}
+.main-nav ul{
+    display: flex;
+    flex: 1;
+    flex-direction: column;
+
+}
+.nav-list li{
+    display: flex;
+    /* width: 102px; */
+    height: 58px;
+    align-items: center;
+    justify-content: center;
+}
+.nav-list li a .main-icon{
+    display: block; 
+    width: 28px;
+    height: 28px;
+    margin-bottom: 4px;
+    background-size: 28px auto;
+    background-repeat: no-repeat;
+}
+.nav-list li a .main-texthead{
+    color: #F1F8FF;
+    font-size: 12px;
+}
+.nav-list li a .main-text{
+    color: #333333;
+    font-size: 12px
+}
+/* 两个图部分 */
+.sub-nav{
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    height: 148px;
+    /* background: skyblue; */
+    margin-left: -8px;
+    padding: 0 2px;
+}
+.banner{
+    position: relative;
+    flex: 1;
+    width: 50%;
+    padding: 8px;
+    margin-left: 8px;
+    border-radius: 8px;
+    background: #fff;
+    /* box-sizing: border-box; */
+    overflow: hidden;
+
+}
+/* 盒子部分 */
+.sub-nav .banner .banner_title{
+    height: 20px;
+
+}
+.sub-nav .banner .banner_title img{
+    width: 73px;
+    height: 20px;
+}
+
+.sub-nav .banner .banner_title .slogan-hotsale{
+    position: absolute;
+    top: 10px;
+    right: 0px;
+    height: 16px;
+    line-height: 16px;
+    border-radius: 2px;
+    font-size: 10px;
+    background: #ffebe3;
+    color: #ff4607;
+    padding: 1px 4px;
+    white-space: nowrap;
+}
+.block-image{
+    position: relative;
+    height: 84px;
+    margin-bottom: 4px;
+    border-radius: 6px;
+    box-sizing: border-box;
+    overflow: hidden;
+}
+.block-image img{
+    position: absolute;
+    top: 50%;
+    -webkit-transform: translateY(-50%);
+    transform: translateY(-50%);
+    width: 100%;
+    height: auto;
+}
+.block-image .product{
+    position: absolute;
+    font-size: 12px;
+    color: #FFF;
+    font-weight: 700;
+    bottom: 6px;
+    left: 6px;
+    right: 6px;
+}
+.banner .price{
+    position: absolute;
+    bottom: 0px;
+    font-size: 16px;
+    color: #FF6600;
+    font-weight: 900;
+}
+
+/*  */
+.block-header{
+    display: flex;
+    height: 20px;
+    margin-bottom: 6px;
+    justify-content: space-around;
+    align-items: center;
+
+}
+.block-header img{
+    width: 73px;
+    height: 20px;
+}
+.block-header .slogan-rank{
+    height: 16px;
+    border-radius: 2px;
+    background: #fdefd2;
+    font-size: 10px;
+    color: #ae6e15;
+    line-height: 16px;
+    padding: 1px 4px;
+    white-space: nowrap;
+}
+/* rank-wraper */
+.rank-wraper{
+    display: flex;
+    flex-direction: row;
+    /* background: skyblue; */
+}
+
+.rank-wraper .rank-item{
+    flex: 1;
+    border-top-left-radius: 8px;
+    border-top-right-radius: 8px;
+    box-sizing: border-box;
+    overflow: hidden;
+}
+.rank-item .box-img{
+    position: relative;
+    height: 84px;
+    border-radius: 6px;
+    box-sizing: border-box;
+    overflow: hidden;
+}
+.rank-wraper .rank-item img{
+    position: absolute;
+    top: 50%;
+    /* -webkit-transform: translateY(-50%); */
+    transform: translateY(-50%);
+    width: 100%;
+    height: 84px;
+}
+.rank-wraper:first-child{
+    margin-right: 2px;
+}
+.rank-wraper .rank-item:last-child{
+    margin-left: 2px;
+}
+/* 底部部分 */
+.block-footer{
+    display: flex;
+    align-items: center;
+}
+.block-footer .rank-title{
+    flex: 1;
+}
+.block-footer .rank-title{
+    font-size: 12px;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+/* 大图部分 */
+.img_wrapper{
+    display: flex;
+    margin-top: 5px;
+
+}
+.img_wrapper img{
+    flex: 1;
+    width: 100%;
+    border-radius: 12px;
+}
+/* 底部工具 */
+.tool_group{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    margin-top: 20px;
+}
+.tool_group .tool_rink{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 30px;
+    border: 1px solid #999;
+    border-radius: 4px;
+    min-width: 100px;
+    font-size: 13px;
+    color: #333;
+    text-align: center;
+    line-height: 17px;
+    
+}
+/* tool_ver */
+.tool_ver{
+
+    font-size: 12px;
+    color: #666666;
+ text-align: center;
+    margin-top: 10px;
+}
+
+.tool_ver a{
+    /* display: block; */
+}
+.tool_ver .toolver_rink:nth-child(2){
+    padding-left: 30px;
+}
+.tool_ver .toolver_rink{
+    color: #666666;
+
+    
+}
+
+.tool_ver p{
+    margin-top: 16px;
+    font-size: 10px;
+    color: #666;
+    letter-spacing: 0;
+    text-align: center;
+    line-height: 12px;
+}
+/* 底部栏 */
+.tabbar{
+    display: flex;
+    height: 49px;
+    justify-content: space-around;
+    margin-top: 10px;
+    background: #fff;
+    position: fixed;
+    bottom: 0px;
+    /* max-width: 540px; */
+    box-shadow: 0 -5px 15px 0 rgb(0 0 0 / 5%);
+    left: 0;
+    right: 0;
+    /* align-items: center;
+    justify-content: center; */
+    
+
+ 
+
+}
+.tabbar .tabbar-link{
+    display: flex;
+    flex: 1;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+.tabbar a{
+    width: 94px;
+    font-size: 12px;
+   
+   
+}
+
+.tabbar a .icon_home{
+    background-image: url(https://webresource.c-ctrip.com/NFES/html5/1662623915668/_next/serverStatic/img/tabbar.png);
+    width: 32px;
+    height: 32px;
+    background-size: 32px auto;
+    background-position: 0 0;
+
+
+
+}

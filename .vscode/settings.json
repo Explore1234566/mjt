@@ -1,0 +1,9 @@
+// {
+//     "liveServer.settings.port": 0
+// }
+{
+    "editor.suggest.filterGraceful": false,
+    "liveServer.settings.host": "192.168.31.153",       // 主机地址，即ip
+    "liveServer.settings.port": 8080,              // 端口号
+            // 代理
+}
